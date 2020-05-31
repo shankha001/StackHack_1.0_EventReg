@@ -1,0 +1,22 @@
+body{
+  background:  #E96D6F;
+  height: 100vh;
+}
+form {
+margin: auto;
+width:500px;
+
+}
+
+.wrapper{
+    margin-top: 10%;
+    background-color: white;
+    padding: 10px;
+}
+.form-div{
+  padding: 20px 5px;
+  border-radius: 50px;
+}
+.fa-phone-alt{
+  padding-left: 7px;
+}

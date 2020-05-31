@@ -1,0 +1,215 @@
+html, body {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom right, #903749, #e84545 );
+  /* background-color:  #e84545; */
+  margin: 0;
+  font-weight: 500;
+
+
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+/*navbar-------------------------------------------
+*/
+.index {
+  border-bottom: #39a0ca solid 4px;
+}
+
+.log {
+  color: white;
+  border: 0.5px solid white;
+  padding: 0.3% 1.5%;
+  border-radius: 5%;
+  transition: 0.4s all;
+}
+
+.left {
+  padding: 0 0 0 10px;
+}
+
+.right {
+  padding: 0 10px 0 0;
+}
+
+.log:hover {
+  color: white;
+  text-decoration: none;
+  transform: translateX(-5px);
+  transform: skewX(-10px);
+}
+
+.navbar {
+
+  width: 100%;
+  background: #2b2e4a;
+  height: 70px;
+
+}
+
+.navbar-brand:hover {
+  animation: wobble;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  outline: none;
+}
+
+/*----------------------------------------------*/
+.slider {
+  margin: 0 0 4% 0;
+}
+
+/*-----------------card view---------------------------------------------------------------*/
+.card-title {
+  text-decoration: underline;
+}
+
+.card {
+  color: black;
+background
+  height: 50%;
+}
+
+.card-img-top {
+  height: 70%;
+}
+
+.col mb-4 {
+  border-radius: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 10px #000;
+}
+
+/*--------------------------------------------------------------------------------*/
+footer {
+  background-color: #555;
+}
+
+/* Help Button */
+.help-btn {
+  font-size: 30px;
+  border-radius: 100%;
+  position: fixed;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  opacity: 90%;
+}
+
+.help-btn:hover {
+  opacity: 190%;
+}
+
+
+
+/* Form */
+
+form {
+margin: 0 auto;
+width:250px;
+}
+
+
+
+.card-user-container {
+  margin-bottom: 1rem;
+  background-color: #102841;
+
+
+  color:white;
+
+  overflow: hidden;
+  padding: 0;
+  border-radius: 0;
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.card-user-container .card-user-avatar .user-image {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 11.875rem;
+  height: 11.875rem;
+  padding: 0.9375rem;
+}
+
+.card-user-container .card-user-avatar .user-image:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card-user-container .card-user-bio {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-user-container .card-user-bio .location {
+  display: inline-block;
+  margin: 0 0.9375rem;
+  color: #767676;
+  font-size: 0.875rem;
+}
+
+.card-user-container .card-user-bio .location-icon,
+.card-user-container .card-user-bio .location-text {
+  display: inline-block;
+  padding: 0 0.3125rem;
+}
+
+.card-user-container .card-user-social {
+  background: #e6e6e6;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-user-container .card-user-social ul {
+  display: inline-block;
+}
+
+.card-user-container .card-user-social ul li {
+  margin: 0 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.card-user-container .card-user-social ul li:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card-user-container .card-user-button {
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+/* Footer */
+footer {
+  
+  background-color: #2b2e4a;
+   padding: 10px;
+   color: beige;
+}
+footer > p {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+footer > a{
+    padding: 10px ;
+    font-size: 25px;
+    color: antiquewhite;
+}
