@@ -1,12 +1,11 @@
 html, body {
   width: 100%;
   text-align: center;
-  background: linear-gradient(to bottom right, #903749, #e84545 );
+  background: linear-gradient(to bottom right, #903749, #e84545);
   /* background-color:  #e84545; */
   margin: 0;
   font-weight: 500;
-
-
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -43,11 +42,13 @@ h1 {
 }
 
 .navbar {
-
   width: 100%;
   background: #2b2e4a;
-  height: 70px;
+  height: 13vh;
+}
 
+.navbar-brand {
+  font-size: 1.5rem;
 }
 
 .navbar-brand:hover {
@@ -69,8 +70,7 @@ h1 {
 
 .card {
   color: black;
-background
-  height: 50%;
+  background height: 50%;
 }
 
 .card-img-top {
@@ -95,37 +95,37 @@ footer {
   position: fixed;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
-  text-align: center;
+  color: #2b2e4a;
   width: 60px;
   height: 60px;
   bottom: 40px;
   right: 40px;
-  opacity: 90%;
+  transition: 0.4s all;
+  z-index: 900;
 }
 
 .help-btn:hover {
   opacity: 190%;
+  color: antiquewhite;
+  background-color: #2b2e4a;
+  transform: translateY(-5px);
 }
-
-
 
 /* Form */
-
 form {
-margin: 0 auto;
-width:250px;
+  margin: 0 auto;
+  width: 250px;
 }
 
-
+.btn {
+  background-color: antiquewhite;
+  font-weight: 700;
+}
 
 .card-user-container {
   margin-bottom: 1rem;
   background-color: #102841;
-
-
-  color:white;
-
+  color: white;
   overflow: hidden;
   padding: 0;
   border-radius: 0;
@@ -146,8 +146,8 @@ width:250px;
 
 .card-user-container .card-user-avatar .user-image:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-user-container .card-user-bio {
@@ -186,8 +186,8 @@ width:250px;
 
 .card-user-container .card-user-social ul li:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-user-container .card-user-button {
@@ -195,21 +195,31 @@ width:250px;
   padding: 1rem;
 }
 
+.menu {
+  margin: auto 0;
+  margin-left: -40px;
+}
 
+.menu>li {
+  color: #555;
+  font-size: 3rem;
+}
 
 /* Footer */
 footer {
-  
+  margin-top: 100px;
   background-color: #2b2e4a;
-   padding: 10px;
-   color: beige;
+  padding: 10px;
+  color: antiquewhite;
 }
-footer > p {
-    margin-bottom: 10px;
-    padding: 10px;
+
+footer>p {
+  margin-bottom: 10px;
+  padding: 10px;
 }
-footer > a{
-    padding: 10px ;
-    font-size: 25px;
-    color: antiquewhite;
+
+footer>a {
+  padding: 10px;
+  font-size: 25px;
+  color: antiquewhite;
 }
