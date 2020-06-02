@@ -1,44 +1,19 @@
 html, body {
   width: 100%;
-  text-align: center;
   background: linear-gradient(to bottom right, #903749, #e84545);
-  /* background-color:  #e84545; */
   margin: 0;
   font-weight: 500;
   font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 
-h1 {
-  margin-bottom: 0;
-}
-
-/*navbar-------------------------------------------
-*/
+/*-------------Navbar-------------------------------------------*/
 .index {
   border-bottom: #39a0ca solid 4px;
 }
 
-.log {
-  color: white;
-  border: 0.5px solid white;
-  padding: 0.3% 1.5%;
-  border-radius: 5%;
-  transition: 0.4s all;
-}
-
-.left {
-  padding: 0 0 0 10px;
-}
-
 .right {
   padding: 0 10px 0 0;
-}
-
-.log:hover {
-  color: white;
-  text-decoration: none;
-  transform: translateX(-5px);
-  transform: skewX(-10px);
 }
 
 .navbar {
@@ -48,53 +23,20 @@ h1 {
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-.navbar-brand:hover {
-  animation: wobble;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  outline: none;
-}
-
-/*----------------------------------------------*/
+/*--------------Carousel--------------------------------*/
 .slider {
   margin: 0 0 4% 0;
 }
 
-/*-----------------card view---------------------------------------------------------------*/
-.card-title {
-  text-decoration: underline;
-}
+/*--------------- Help Button------------------------ */
 
-.card {
-  color: black;
-  background height: 50%;
-}
-
-.card-img-top {
-  height: 70%;
-}
-
-.col mb-4 {
-  border-radius: 90%;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 10px #000;
-}
-
-/*--------------------------------------------------------------------------------*/
-footer {
-  background-color: #555;
-}
-
-/* Help Button */
 .help-btn {
   font-size: 30px;
   border-radius: 100%;
   position: fixed;
-  border-radius: 50px;
-  text-align: center;
   color: #2b2e4a;
   width: 60px;
   height: 60px;
@@ -102,6 +44,7 @@ footer {
   right: 40px;
   transition: 0.4s all;
   z-index: 900;
+  opacity: 80%;
 }
 
 .help-btn:hover {
@@ -111,7 +54,7 @@ footer {
   transform: translateY(-5px);
 }
 
-/* Form */
+/*----------------- Form -----------------------*/
 form {
   margin: 0 auto;
   width: 250px;
@@ -205,7 +148,7 @@ form {
   font-size: 3rem;
 }
 
-/* Footer */
+/*----------------- Footer ----------------------*/
 footer {
   margin-top: 100px;
   background-color: #2b2e4a;
@@ -222,4 +165,34 @@ footer>a {
   padding: 10px;
   font-size: 25px;
   color: antiquewhite;
+}
+
+form {
+  margin: auto;
+  width: 500px;
+  text-align: left;
+}
+
+/*-------------Reg-form-----------------*/
+.wrapper-form {
+  margin-top: 10%;
+  background-color: white;
+  padding: 10px 15px 40px;
+}
+
+.form-div {
+  padding: 20px 5px;
+  border-radius: 50px;
+}
+
+.radio-label {
+  padding-right: 15px;
+}
+
+.upload-text {
+  padding-left: 80px;
+}
+
+.reg-submit {
+  float: right;
 }

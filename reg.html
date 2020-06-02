@@ -1,98 +1,255 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Register</title>
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!-- Font-Awesome -->
-  <script src="https://kit.fontawesome.com/d751ff6225.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src="trialJavaScript.js"></script> -->
 
 
-  <link rel="stylesheet" href="css/styles1.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/regstyle.css">
 </head>
 
 <body>
-  <form class="" action="index.html" method="post">
-    <div class="wrapper">
 
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
+  <!-- Navbar starts-->
+  <section class="index">
+    <nav class="navbar navbar-dark">
+      <a class="navbar-brand" href="#">
+        <i class="right fa fa-grav" aria-hidden="true"></i>Event Registration</a>
+      <button type="button" class="btn btn-light" name="button">Login<i class="left fa fa-user"></i></button>
 
-      <div class="input-field col s6">
-        <i class="material-icons prefix"><i class="fas fa-phone-alt"></i></i>
-        <input id="icon_telephone" type="tel" class="validate">
-        <label for="icon_telephone">Telephone</label>
-      </div>
+    </nav>
+  </section>
+  <!-- navbar ends -->
 
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-          <span class="helper-text" data-error="wrong" data-success="right">Enter correct email</span>
-        </div>
-      </div>
-
-      <div class="form-div">
-        <label for="">Upload ID Card (Formats: png, jpeg)</label>
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>File</span>
-            <input type="file">
+  <!-- form starts -->
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="contact100-more flex-col-c-m col-12 col-md-10 col-lg-5 col-xl-5 text-center p-0 mt-3 mb-2 " style="background-image: url('images/bg-01.jpg'); margin: 10% 0;">
+        <div class="flex-w size1 p-b-47">
+          <div class="txt1 p-r-25">
+            <span class="location-icon fa fa-map-marker"></span>
           </div>
-          <div class="file-path-wrapper">
 
-            <input class="file-path validate" type="text">
+          <div class="flex-col size2">
+            <span class="txt1 p-b-20">
+              Address
+            </span>
 
+            <span class="txt2">
+              Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+            </span>
           </div>
         </div>
+
+        <div class="dis-flex size1 p-b-47">
+          <div class="txt1 p-r-25">
+            <span class="lnr lnr-phone-handset"><i class="fa fa-phone"></i></span>
+          </div>
+
+          <div class="flex-col size2">
+            <span class="txt1 p-b-20">
+              Lets Talk
+            </span>
+
+            <span class="txt3">
+              +1 800 1236879
+            </span>
+          </div>
+        </div>
+
+        <div class="dis-flex size1 p-b-47">
+          <div class="txt1 p-r-25">
+            <span class="lnr lnr-envelope"><i class="fa fa-envelope"></i></span>
+          </div>
+
+          <div class="flex-col size2">
+            <span class="txt1 p-b-20">
+              General Support
+            </span>
+
+            <span class="txt3">
+              contact@example.com
+            </span>
+          </div>
+        </div>
       </div>
+      <div class="col-12 col-md-10 col-lg-5 col-xl-5 text-center p-0 mt-3 mb-2">
+        <div class="card">
+          <h2 id="heading">Event Registration</h2>
+          <p>Fill all the form fields to go to next step</p>
+          <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+              <li id="personal" class="active"><strong>Personal</strong></li>
+              <li id="payment"><strong>Preview</strong></li>
+              <li id="confirm"><strong>Finish</strong></li>
+            </ul>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+            </div> <br> <!-- fieldsets -->
+            <fieldset>
+              <div class="form-card justify-content-center">
+                <div class="row justify-content-center">
+                  <div class="col-5">
+                    <h2 class="fs-title">Personal Information:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 1 - 3</h2>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-5">
+                    <label class="fieldlabels" for="fname">First Name: *</label>
+                    <input type="text" name="fname" placeholder="First Name" id="fname" required />
+                  </div>
+                  <div class="col-5">
+                    <label class="fieldlabels" for="lname">Last Name: *</label>
+                    <input type="text" name="lname" placeholder="Last Name" id="lname" />
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-5">
+                    <label class="fieldlabels" for="contact">Contact No.: *</label>
+                    <input type="text" name="phno" placeholder="Contact No." id="contact" />
+                  </div>
+                  <div class="col-5">
+                    <label class="fieldlabels" for="email">Email: *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email id" />
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="form-div col-10">
+                    <h2 class="fs-title reg-title">Registration type : Self/Group/Corporate/Others</h2>
 
-      <div class="form-div">
-        <label for="">Registration type : Self/Group/Corporate/Others</label>
-        <p>
-          <label>
-            <input name="group1" type="radio" checked />
-            <span>Red</span>
-          </label>
+                    <p>
+                    <div class="flex-container">
 
-          <label>
-            <input name="group1" type="radio" />
-            <span>Yellow</span>
-          </label>
 
-          <label>
-            <input class="with-gap" name="group1" type="radio" />
-            <span>Green</span>
-          </label>
 
-          <label>
-            <input name="group1" type="radio" disabled="disabled" />
-            <span>Brown</span>
-          </label>
-        </p>
+                      <input class="with-gap" name="group1" type="radio" value="a"  />
+                      <span>Self</span>
+
+
+                      <input class="with-gap " name="group1" type="radio" value="b"  />
+                      <span>Group</span>
+
+
+
+                      <input class="with-gap " name="group1" type="radio" value="c"  />
+                      <span>Corporate</span>
+
+
+
+                      <input class="with-gap " name="group1" type="radio" value="d" />
+                      <span>Others</span>
+
+                    </div>
+                    </p>
+                  </div>
+                </div>
+
+
+
+
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                    <h2 class="fs-title ">Upload Your Photo:</h2>
+
+                    <input type="file" name="pic" accept="image/png, image/jpeg">
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+
+                  <div class="col-10">
+                    <h2 class="fs-title ">No of Tickets:</h2>
+
+
+                    <div class=" ticket-btn">
+                      <input type="button" value="+" onclick="button1()" class="counter" />
+                    </div>
+                    <div class=" ticket-btn">
+                      <span id="output-area"></span>
+                    </div>
+                    <div class=" ticket-btn">
+                      <input type="button" value="-" onclick="button2() " class="counter" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input type="submit" name="next" class="next action-button" value="Next" />
+              <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Preview:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 2 - 3</h2>
+                  </div>
+                </div>
+
+              </div>
+              <input type="button" name="next" class="next action-button" value="Submit" />
+              <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Finish:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 3 - 3</h2>
+                  </div>
+                </div> <br><br>
+                <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                <div class="row justify-content-center">
+                  <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
+                </div> <br><br>
+                <div class="row justify-content-center">
+                  <div class="col-7 text-center">
+                    <h5 class="purple-text text-center">You Have Successfully Register For The Event</h5>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
-
-      <div class="form-div">
-        <label for="">No of Tickets:</label>
-        <input type="text" name="" value="">
-      </div>
-
-      <button type="button" name="button">Submit</button>
     </div>
-  </form>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </div>
+  <!-- form ends -->
+
+
+  <!--footer ends -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/reg.js"></script>
 
 </body>
+
+<!-- footer starts -->
+<footer class="justify-content-center">
+
+  <a href="#"><i class="fa fa-twitter foot-icon"></i></a>
+  <a href="#"><i class="fa fa-facebook foot-icon"></i></a>
+  <a href="#"><i class="fa fa-instagram foot-icon"></i></a>
+  <a href="#"><i class="fa fa-envelope foot-icon"></i></a>
+  <h1>Event Registration</h1>
+  <p>&copy; Copyright 2020 </p>
+</footer>
+
 
 </html>
