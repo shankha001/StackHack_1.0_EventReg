@@ -80,102 +80,73 @@
           <!-- Form Heading -->
           <h1 class="heading-primary">
             <span class="heading-primary--main">Event Registration</span>
-            <span class="heading-primary--sub">Fill all the form fields to go to next step</span>
+            <span class="heading-primary--sub">Confirm all the details & click on Finish</span>
+
           </h1>
           <!-- Progressbar -->
 
           <div class="progressbar">
             <li id="personal" class="progressbar--item"><i class="fas fa-user active"></i></li>
-            <li id="payment" class="progressbar--item"><i class="fas fa-camera"></i></li>
+            <li id="payment" class="progressbar--item"><i class="fas fa-camera active"></i></li>
             <li id="confirm" class="progressbar--item"><i class="fas fa-check-circle"></i></li>
           </div>
-          <form action="/reg.html" method="POST" enctype="multipart/form-data">
+          <form action="/reg.html" method="POST">
 
             <div class="form-card ">
               <div class="row row-form">
                 <div class="col-1-of-2 form-elements">
-                  <h2 class="fs-title">Personal details:</h2>
+                  <h2 class="fs-title">Preview:</h2>
                 </div>
                 <div class="col-1-of-2 form-elements">
-                  <h2 class="steps">Step 1 - 3</h2>
+                  <h2 class="steps">Step 2 - 3</h2>
                 </div>
               </div>
-              <div class="row row-form">
-                <div class="col-1-of-2 form-elements">
-                  <label class="fieldlabels" for="fname">First Name: *</label>
-                  <input type="text" name="fname" placeholder="First Name" id="fname" required />
+              <div class="row row-form"></div>
+                <div id="inputs" class="col-1-of-2 form-elements">
+                  <p>Hello!!</p>
+
                 </div>
-                <div class="col-1-of-2 form-elements">
-                  <label class="fieldlabels" for="lname">Last Name: *</label>
-                  <input type="text" name="lname" placeholder="Last Name" id="lname" required />
+                <div id="input1"class="col-1-of-2 form-elements">
+                  <p>Hello!!</p>
+
+                </div>
+                <div id="input2" class="col-1-of-2 form-elements">
+                  <p>Hello!!</p>
+
+                </div>
+                <div id="input3" class="col-1-of-2">
+                  <p>Hello!!</p>
+
+                </div>
+                <div id="input4" class="col-1-of-2">
+                  <p>Hello!!</p>
+
+                </div>
+                <div id="input5"class="col-1-of-2" >
+                  <p>Hello!!</p>
+
                 </div>
               </div>
-              <div class="row row-form">
-                <div class="col-1-of-2 form-elements">
-                  <label class="fieldlabels" for="contact">Contact No.: *</label>
-                  <input type="tel" name="phno" placeholder="Contact No." pattern="[0-9]{10}" id="contact" required />
-                </div>
-                <div class="col-1-of-2 form-elements">
-                  <label class="fieldlabels" for="email">Email: *</label>
-                  <input type="email" id="email" name="email" placeholder="you@example.com" required />
-                </div>
-              </div>
-            </div>
-            <div class="form-card ">
-              <div class="row row-form">
-
-                <h2 class="fs-title">Registration type:</h2>
-                <p>
-                <div class="form-radio">
-                  <input name="group1" type="radio" value="self" id="self"/>
-                  <label class="form-radio__individual " for="self">Self</label>
-
-                  <input name="group1" type="radio" value="group" id="group"/>
-                  <label class="form-radio__individual" for="group">Group</label>
-
-                  <input name="group1" type="radio" value="corporate" id="corporate"/>
-                  <label class="form-radio__individual" for="corporate" >Corporate</label>
-
-                  <input name="group1" type="radio" value="others" id="others"/>
-                  <label class="form-radio__individual" for="others">Others</label>
-                </div>
-                </p>
-
-              </div>
-            </div>
-
-            <div class="form-card">
-              <div class="row row-form">
-                <h2 class="fs-title">Upload Your Photo:</h2>
-                <input type="file" name="file" accept="image/png, image/jpeg" id="pic" required>
-
-              </div>
-            </div>
-
-            <div class="form-card">
-              <div class="row row-form">
-                <h2 class="fs-title">No. of Tickets:</h2>
-                <input type="number" name="people" min="1" max="10" id="tickets" value="1" required />
-              </div>
-            </div>
-
+              
             <div class="row row-form">
-              <input type="submit" name="next" class="btn-form" value="Next" id="next"/>
-              <button  type="button" name="button" class="btn-form" onclick="window.location.href='/'">Previous</button>
+              <input type="button" name="next" class="btn-form" value="Finish" onclick="window.location.href='/finish'" />
+
+              <button  type="button" name="button" class="btn-form" onclick="window.location.href='/reg.html'">Previous</button>
 
 
+            </div>
             </div>
           </form>
+
+
+
+
         </div>
-
-
-
-      </div>
 
     </section>
 
   </main>
-  
+
   <section class="footer-class">
     <footer>
       <a href="#"><i class="fab fa-twitter foot-icon"></i></a>
