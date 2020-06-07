@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
@@ -15,59 +15,66 @@
 </head>
 
 <body>
+  <section class="header-class">
+    <header>
+        <i class="fab fa-elementor header__logo"></i>
+
+    </header>
+  </section>
 
   <main>
 
     <section class="section-card">
       <div class="row row-form">
         <div class="col-1-of-2 image-section col-2">
+          <div class="image-details" id="card-img">
+            <div class="details_section">
+              <div class="">
+                <h3 id="eventName"></h3>
+              </div>
+            </div>
 
-          <div class="contact100-more flex-col-c-m col-12 col-md-10 col-lg-5 col-xl-5 text-center p-0 mt-3 mb-2 bg-img" id="card-img">
-            <div class="flex-w size1 p-b-47">
-              <div class="txt1 p-r-25">
+            <div class="details_section">
+              <div class="">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </div>
+
+              <div class="">
+                <p id="about">
+                  Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+                </p>
+              </div>
+            </div>
+
+            <div class="details_section">
+              <div class="">
                 <span class="location-icon fa fa-map-marker"></span>
               </div>
 
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  Address
-                </span>
-
-                <span class="txt2">
+              <div class="">
+                <p id="add">
                   Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
-                </span>
+                </p>
               </div>
             </div>
 
-            <div class="dis-flex size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-phone-handset"><i class="fa fa-phone"></i></span>
-              </div>
-
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  Lets Talk
-                </span>
-
-                <span class="txt3">
-                  +1 800 1236879
-                </span>
+            <div class="details_section">
+              <div class="">
+                <span class=""><i class="fa fa-phone-alt"></i><span class="txt3">
+               +1 800 1236879
+                </span> </span>
               </div>
             </div>
 
-            <div class="dis-flex size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-envelope"><i class="fa fa-envelope"></i></span>
+            <div class="details_section">
+              <div class="">
+                <span class=""><i class="fa fa-envelope"></i></span>
               </div>
 
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  General Support
-                </span>
-
-                <span class="txt3">
+              <div class="">
+                <p class="txt3">
                   contact@example.com
-                </span>
+                </p>
               </div>
             </div>
           </div>
@@ -113,7 +120,7 @@
               <div class="row row-form">
                 <div class="col-1-of-2 form-elements">
                   <label class="fieldlabels" for="contact">Contact No.: *</label>
-                  <input type="tel" name="phno" placeholder="Contact No." pattern="[0-9]{10}" id="contact" required />
+                  <input type="tel" name="phno" placeholder="Enter 10 digit Phone No." pattern="[0-9]{10}" id="contact" required />
                 </div>
                 <div class="col-1-of-2 form-elements">
                   <label class="fieldlabels" for="email">Email: *</label>
@@ -147,6 +154,7 @@
             <div class="form-card">
               <div class="row row-form">
                 <h2 class="fs-title">Upload Your Photo:</h2>
+                <h3>Size : 200x200</h3>
                 <input type="file" name="file" accept="image/png, image/jpeg" id="pic" required>
 
               </div>
@@ -160,7 +168,7 @@
             </div>
 
             <div class="row row-form">
-              <input type="submit" name="next" class="btn-form" value="Next" id="next"/>
+              <input type="submit" name="next" class="btn-form" value="Next" id="next"  />
               <button  type="button" name="button" class="btn-form" onclick="window.location.href='/'">Previous</button>
 
 
@@ -175,7 +183,7 @@
     </section>
 
   </main>
-  
+
   <section class="footer-class">
     <footer>
       <a href="#"><i class="fab fa-twitter foot-icon"></i></a>

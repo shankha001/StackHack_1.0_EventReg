@@ -15,59 +15,66 @@
 </head>
 
 <body>
+  <section class="header-class">
+    <header>
+        <i class="fab fa-elementor header__logo"></i>
+
+    </header>
+  </section>
 
   <main>
 
     <section class="section-card">
       <div class="row row-form">
         <div class="col-1-of-2 image-section col-2">
+          <div class="image-details" id="card-img">
+            <div class="details_section">
+              <div class="">
+                <h3 id="eventName"></h3>
+              </div>
+            </div>
 
-          <div class="contact100-more flex-col-c-m col-12 col-md-10 col-lg-5 col-xl-5 text-center p-0 mt-3 mb-2 bg-img" id="card-img">
-            <div class="flex-w size1 p-b-47">
-              <div class="txt1 p-r-25">
+            <div class="details_section">
+              <div class="">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </div>
+
+              <div class="">
+                <p id="about">
+                  Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+                </p>
+              </div>
+            </div>
+
+            <div class="details_section">
+              <div class="">
                 <span class="location-icon fa fa-map-marker"></span>
               </div>
 
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  Address
-                </span>
-
-                <span class="txt2">
+              <div class="">
+                <p id="add">
                   Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
-                </span>
+                </p>
               </div>
             </div>
 
-            <div class="dis-flex size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-phone-handset"><i class="fa fa-phone"></i></span>
-              </div>
-
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  Lets Talk
-                </span>
-
-                <span class="txt3">
-                  +1 800 1236879
-                </span>
+            <div class="details_section">
+              <div class="">
+                <span class=""><i class="fa fa-phone-alt"></i><span class="txt3">
+               +1 800 1236879
+                </span> </span>
               </div>
             </div>
 
-            <div class="dis-flex size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-envelope"><i class="fa fa-envelope"></i></span>
+            <div class="details_section">
+              <div class="">
+                <span class=""><i class="fa fa-envelope"></i></span>
               </div>
 
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  General Support
-                </span>
-
-                <span class="txt3">
+              <div class="">
+                <p class="txt3">
                   contact@example.com
-                </span>
+                </p>
               </div>
             </div>
           </div>
@@ -90,7 +97,7 @@
             <li id="payment" class="progressbar--item"><i class="fas fa-camera active"></i></li>
             <li id="confirm" class="progressbar--item"><i class="fas fa-check-circle"></i></li>
           </div>
-          <form action="/reg.html" method="POST">
+          <form>
 
             <div class="form-card ">
               <div class="row row-form">
@@ -101,40 +108,92 @@
                   <h2 class="steps">Step 2 - 3</h2>
                 </div>
               </div>
-              <div class="row row-form"></div>
-                <div id="inputs" class="col-1-of-2 form-elements">
-                  <p>Hello!!</p>
+              <div class="row row-form">
+                <div class="col-1-of-2 form-elements">
+                  <h3 class="title">Profile Photo:</h3>
 
                 </div>
-                <div id="input1"class="col-1-of-2 form-elements">
-                  <p>Hello!!</p>
-
-                </div>
-                <div id="input2" class="col-1-of-2 form-elements">
-                  <p>Hello!!</p>
-
-                </div>
-                <div id="input3" class="col-1-of-2">
-                  <p>Hello!!</p>
-
-                </div>
-                <div id="input4" class="col-1-of-2">
-                  <p>Hello!!</p>
-
-                </div>
-                <div id="input5"class="col-1-of-2" >
-                  <p>Hello!!</p>
-
+                <div class="col-1-of-2 form-elements" style="height:150px ;   width:100px;">
+                    <div class="image-details" id="card-images" >
+                    </div>
                 </div>
               </div>
-              
-            <div class="row row-form">
-              <input type="button" name="next" class="btn-form" value="Finish" onclick="window.location.href='/finish'" />
 
-              <button  type="button" name="button" class="btn-form" onclick="window.location.href='/reg.html'">Previous</button>
+              <div class="row row-form">
+                <div class="col-1-of-2 form-elements">
+                  <h3 class="title">Name:</h3>
+
+                </div>
+                <div class="col-1-of-2 form-elements">
+                  <h3 type="text" name="fname" id="fname"></h3><h3 name="lname" id="lname"></h3>
+                </div>
+              </div>
 
 
-            </div>
+              <div class="row row-form">
+                <div class="col-1-of-2 form-elements">
+                  <h3 class="title">Email: </h3>
+
+                </div>
+                <div class="col-1-of-2 form-elements">
+                  <h3 name="email" id="email"></h3>
+                </div>
+              </div>
+
+
+              <div class="row row-form">
+                <div class="col-1-of-2 form-elements">
+                  <h3 class="title">Contact:</h3>
+
+                </div>
+                <div class="col-1-of-2 form-elements">
+                  <h3 name="phno" id="phno"></h3>
+                </div>
+              </div>
+
+
+              <div class="row row-form">
+                <div class="col-1-of-2 form-elements">
+                  <h3 class="title">Category:</h3>
+
+                </div>
+                <div class="col-1-of-2 form-elements">
+                  <h3 name="category" id="category"></h3>
+                </div>
+              </div>
+
+
+              <div class="row row-form">
+                <div class="col-1-of-2 form-elements">
+                  <h3 class="title">No Of Tickets: </h3>
+
+                </div>
+                <div class="col-1-of-2 form-elements">
+                  <h3 name="no_tik" id="no_tik"></h3>
+                </div>
+              </div>
+
+
+              <div class="row row-form">
+                <div class="col-1-of-2 form-elements">
+                  <h3 class="title">Registration ID:</h3>
+
+                </div>
+                <div class="col-1-of-2 form-elements">
+                  <h3 name="uid" id="uid"></h3>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="row row-form">
+                <input type="button" name="next" class="btn-form" id="finish" value="Finish" onclick="window.location.href='/finish'" />
+                <button type="button" name="button" class="btn-form" onclick="window.location.href='/reg.html'">Previous</button>
+              </div>
+
+
             </div>
           </form>
 
@@ -142,7 +201,7 @@
 
 
         </div>
-
+      </div>
     </section>
 
   </main>
@@ -162,10 +221,11 @@
 
 
   <!-- Javascript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="js/reg.js" charset="utf-8"></script>
+  <script src="js/test.js" charset="utf-8"></script>
 
 
 </body>

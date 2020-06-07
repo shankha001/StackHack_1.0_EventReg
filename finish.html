@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Font-Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
@@ -15,59 +15,66 @@
 </head>
 
 <body>
+  <section class="header-class">
+    <header>
+      <i class="fab fa-elementor header__logo"></i>
+
+    </header>
+  </section>
 
   <main>
 
     <section class="section-card">
       <div class="row row-form">
         <div class="col-1-of-2 image-section col-2">
+          <div class="image-details" id="card-img">
+            <div class="details_section">
+              <div class="">
+                <h3 id="eventName"></h3>
+              </div>
+            </div>
 
-          <div class="contact100-more flex-col-c-m col-12 col-md-10 col-lg-5 col-xl-5 text-center p-0 mt-3 mb-2 bg-img" id="card-img">
-            <div class="flex-w size1 p-b-47">
-              <div class="txt1 p-r-25">
+            <div class="details_section">
+              <div class="">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </div>
+
+              <div class="">
+                <p id="about">
+                  Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+                </p>
+              </div>
+            </div>
+
+            <div class="details_section">
+              <div class="">
                 <span class="location-icon fa fa-map-marker"></span>
               </div>
 
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  Address
-                </span>
-
-                <span class="txt2">
+              <div class="">
+                <p id="add">
                   Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
-                </span>
+                </p>
               </div>
             </div>
 
-            <div class="dis-flex size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-phone-handset"><i class="fa fa-phone"></i></span>
-              </div>
-
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  Lets Talk
-                </span>
-
-                <span class="txt3">
-                  +1 800 1236879
-                </span>
+            <div class="details_section">
+              <div class="">
+                <span class=""><i class="fa fa-phone-alt"></i><span class="txt3">
+               +1 800 1236879
+                </span> </span>
               </div>
             </div>
 
-            <div class="dis-flex size1 p-b-47">
-              <div class="txt1 p-r-25">
-                <span class="lnr lnr-envelope"><i class="fa fa-envelope"></i></span>
+            <div class="details_section">
+              <div class="">
+                <span class=""><i class="fa fa-envelope"></i></span>
               </div>
 
-              <div class="flex-col size2">
-                <span class="txt1 p-b-20">
-                  General Support
-                </span>
-
-                <span class="txt3">
+              <div class="">
+                <p class="txt3">
                   contact@example.com
-                </span>
+                </p>
               </div>
             </div>
           </div>
@@ -86,8 +93,8 @@
           <!-- Progressbar -->
 
           <div class="progressbar">
-            <li id="personal" class="progressbar--item"><i class="fas fa-user"></i></li>
-            <li id="payment" class="progressbar--item"><i class="fas fa-camera "></i></li>
+            <li id="personal" class="progressbar--item"><i class="fas fa-user active"></i></li>
+            <li id="payment" class="progressbar--item"><i class="fas fa-camera active"></i></li>
             <li id="confirm" class="progressbar--item"><i class="fas fa-check-circle active"></i></li>
           </div>
           <form action="/reg.html" method="POST">
@@ -101,71 +108,19 @@
                   <h2 class="steps">Step 3 - 3</h2>
                 </div>
               </div>
-              <!-- <div class="row row-form">
-                <div class="col-1-of-2 form-elements">
-                  <label class="fieldlabels" for="fname">First Name: *</label>
-                  <input type="text" name="fname" placeholder="First Name" id="fname" required />
-                </div>
-                <div class="col-1-of-2 form-elements">
-                  <label class="fieldlabels" for="lname">Last Name: *</label>
-                  <input type="text" name="lname" placeholder="Last Name" id="lname" required />
+              <div class="row row-form">
+                <div class="tick">
+                  <i class="fas fa-check"></i>
+                    <p>Confirmed !</p>
                 </div>
               </div>
               <div class="row row-form">
-                <div class="col-1-of-2 form-elements">
-                  <label class="fieldlabels" for="contact">Contact No.: *</label>
-                  <input type="tel" name="phno" placeholder="Contact No." pattern="[0-9]{10}" id="contact" required />
-                </div>
-                <div class="col-1-of-2 form-elements">
-                  <label class="fieldlabels" for="email">Email: *</label>
-                  <input type="email" id="email" name="email" placeholder="you@example.com" required />
-                </div>
-              </div>
-            </div>
-            <div class="form-card ">
-              <div class="row row-form">
+                <input type="button" name="next" class="btn-form" value="HOME" onclick="window.location.href='/'" />
 
-                <h2 class="fs-title">Registration type:</h2>
-                <p>
-                <div class="form-radio">
-                  <input name="group1" type="radio" value="self" id="self"/>
-                  <label class="form-radio__individual " for="self">Self</label>
+                <button type="button" name="button" class="btn-form" onclick="window.location.href='mailto:someone@example.com'">Contact</button>
 
-                  <input name="group1" type="radio" value="group" id="group"/>
-                  <label class="form-radio__individual" for="group">Group</label>
-
-                  <input name="group1" type="radio" value="corporate" id="corporate"/>
-                  <label class="form-radio__individual" for="corporate" >Corporate</label>
-
-                  <input name="group1" type="radio" value="others" id="others"/>
-                  <label class="form-radio__individual" for="others">Others</label>
-                </div>
-                </p>
 
               </div>
-            </div>
-
-            <div class="form-card">
-              <div class="row row-form">
-                <h2 class="fs-title">Upload Your Photo:</h2>
-                <input type="file" name="pic" accept="image/png, image/jpeg" id="pic" required>
-              </div>
-            </div>
-
-            <div class="form-card">
-              <div class="row row-form">
-                <h2 class="fs-title">No. of Tickets:</h2>
-                <input type="number" name="people" min="1" max="10" id="output-area people" value="1" required />
-              </div>
-            </div> -->
-
-            <div class="row row-form">
-              <input type="button" name="next" class="btn-form" value="Finish" onclick="window.location.href='/finish'" />
-
-              <button  type="button" name="button" class="btn-form" onclick="window.location.href='/reg.html'">Previous</button>
-
-
-            </div>
             </div>
           </form>
 
@@ -173,7 +128,7 @@
 
 
         </div>
-
+      </div>
     </section>
 
   </main>

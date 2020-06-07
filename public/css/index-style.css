@@ -65,6 +65,7 @@ body {
     font-size: 50px;
     letter-spacing: 8px;
     font-weight: 700;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
     background-image: linear-gradient(to right, #4C495D, #902BB1);
     -webkit-background-clip: text;
     animation-name: moveInLeft;
@@ -234,6 +235,8 @@ body {
       padding: 2.5rem 0; }
       .cards .row .col-1-of-3 .card-user-avatar .user-image {
         border-radius: 100px;
+        height:200px;
+        width:200px;
         box-shadow: 0 0 5px black;
         transition: transform 0.4s; }
         .cards .row .col-1-of-3 .card-user-avatar .user-image:hover {
