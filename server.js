@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const axios = require("axios");
 const https = require("https");
 const upload = require('express-fileupload');
-
+require('dotenv').config();
 
 const app = express();
 const mongoose = require("mongoose");
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 app.use(upload());
 
 
-mongoose.connect("mongodb://localhost:27017/regDB", {
+mongoose.connect(process.env.Mongodb_KEY, {
   useNewUrlParser: true
 });
 const itemsSchema = {
