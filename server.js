@@ -17,9 +17,14 @@ app.use(bodyParser.urlencoded({
 app.use(upload());
 
 
-mongoose.connect(process.env.Mongodb_KEY, {
+// mongoose.connect(process.env.Mongodb_KEY, {
+//   useNewUrlParser: true
+// });
+
+mongoose.connect("mongodb://localhost:27017/regDB", {
   useNewUrlParser: true
 });
+
 const itemsSchema = {
   fname: String,
   lname: String,
